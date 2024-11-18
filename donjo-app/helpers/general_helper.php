@@ -1018,7 +1018,7 @@ if (! function_exists('menu_tema')) {
      * @return mixed
      */
     function menu_tema()
-    {
+    {   
         return cache()->rememberForever('menu_tema', static fn () => (new Menu())->tree()->toArray());
     }
 }

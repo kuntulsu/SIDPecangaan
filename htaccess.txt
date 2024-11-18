@@ -78,3 +78,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   ExpiresByType application/font-woff "access 1 year" 
   ExpiresByType application/font-woff2 "access 1 year"
 </IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “alt-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php81 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

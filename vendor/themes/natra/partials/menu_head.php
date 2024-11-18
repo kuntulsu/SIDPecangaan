@@ -20,6 +20,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav custom_nav">
                 <li class="dropdown"><a href="<?= site_url(); ?>">Beranda</a></li>
+                
 				<?php createDropdownMenu(menu_tema()) ?>               
             </ul>
 		</div>

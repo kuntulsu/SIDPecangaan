@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export SOURCEPATH=~/repositories/sidpecangaan
-    - export DEPLOYPATH=~/public_html/sidpecangaan
+    - export SOURCEPATH=~/repositories/sidpecangaan/
+    - export DEPLOYPATH=~/public_html/
     - export php81=/opt/alt/php81/usr/bin/php
     - /bin/rsync -ar --exclude=".git" --exclude=".github" $SOURCEPATH $DEPLOYPATH
     - /bin/mv $DEPLOYPATH/htaccess.txt $DEPLOYPATH/.htaccess
